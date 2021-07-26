@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/movies.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bangers|Righteous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Movie list</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="showall">Filmzoeker</h1>
+      <nav class="filtermenu">
+        <input
+          type="radio"
+          name="movie-filter"
+          id="latest-movies"
+          value="latest-movies"
+        />
+        <label for="latest-movies"> Nieuwste </label>
+
+        <input
+          type="radio"
+          name="movie-filter"
+          id="avengers"
+          value="avengers"
+        />
+        <label for="avengers"> Avengers</label>
+
+        <input type="radio" name="movie-filter" id="x-men" value="x-men" />
+        <label for="x-men"> X-Men</label>
+
+        <input
+          type="radio"
+          name="movie-filter"
+          id="princess"
+          value="princess"
+        />
+        <label for="princess">Princess</label>
+
+        <input type="radio" name="movie-filter" id="batman" value="batman" />
+        <label for="batman">Batman</label>
+
+        <input
+          type="text"
+          name="movie-filter"
+          id="searchfield"
+          value=""
+          placeholder="Zoek een film"
+        />
+      </nav>
+    </header>
+    <main>
+      <ul id="movielist"></ul>
+    </main>
+    <footer>
+      <p class="showall">
+        Klik hier of op de website titel voor de volledige lijst met films.
+      </p>
+      <a href="#">Terug naar boven</a>
+      <p>Mart van den Berg - 2021</p>
+    </footer>
+  </body>
+</html>
